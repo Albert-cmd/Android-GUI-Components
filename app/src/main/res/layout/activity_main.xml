@@ -8,13 +8,18 @@
 
     <Spinner
         android:id="@+id/selector"
+
         android:layout_width="125dp"
         android:layout_height="49dp"
         android:layout_marginTop="108dp"
         android:layout_marginEnd="116dp"
         android:layout_marginRight="116dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:entries="@array/spinnerItems"
+
+        />
+
 
     <Button
         android:id="@+id/boto"
