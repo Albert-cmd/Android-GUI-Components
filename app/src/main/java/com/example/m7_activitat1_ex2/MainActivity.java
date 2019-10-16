@@ -32,9 +32,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
                 TextInputEditText quadreText = (TextInputEditText) findViewById(R.id.quadreTexthint);
                 quadreText.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD);
-
             }
-
         if (parent.getItemAtPosition(position).toString().equalsIgnoreCase("Work")){
 
             TextInputEditText quadreText = (TextInputEditText) findViewById(R.id.quadreTexthint);
