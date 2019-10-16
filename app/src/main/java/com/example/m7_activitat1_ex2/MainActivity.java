@@ -28,28 +28,28 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
 
-            if (parent.getItemAtPosition(position)==0){
+            if (parent.getItemAtPosition(position).toString().equalsIgnoreCase("Home")){
 
                 TextInputEditText quadreText = (TextInputEditText) findViewById(R.id.quadreTexthint);
                 quadreText.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD);
 
             }
 
-        if (parent.getItemAtPosition(position)==1){
+        if (parent.getItemAtPosition(position).toString().equalsIgnoreCase("Work")){
 
             TextInputEditText quadreText = (TextInputEditText) findViewById(R.id.quadreTexthint);
             quadreText.setInputType(InputType.TYPE_CLASS_NUMBER);
 
         }
 
-        if (parent.getItemAtPosition(position)==2){
+        if (parent.getItemAtPosition(position).toString().equalsIgnoreCase("Mobile")){
 
             TextInputEditText quadreText = (TextInputEditText) findViewById(R.id.quadreTexthint);
             quadreText.setInputType(InputType.TYPE_CLASS_PHONE);
 
         }
 
-        if (parent.getItemAtPosition(position)==3){
+        if (parent.getItemAtPosition(position).toString().equalsIgnoreCase("Other")){
 
             TextInputEditText quadreText = (TextInputEditText) findViewById(R.id.quadreTexthint);
             quadreText.setInputType(InputType.TYPE_CLASS_DATETIME);
